@@ -1,11 +1,28 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFramework>net5.0</TargetFramework>
+    <TargetFrameworks>net5.0</TargetFrameworks>
+    <RootNamespace>Lithium.UnityAop</RootNamespace>
+  </PropertyGroup>
+
+ <PropertyGroup>
+    <PackageId>Lithium.UnityAop</PackageId>
+    <Title>Unity container AOP support</Title>
+    <Description>
+      Support for Aspect Oriented Programming in Unity container in dotnet.
+    </Description>
+    <Authors>Roland Żerek</Authors>
+    <Company>lithium.com.pl</Company>
+    <Copyright>Copyright © 2020 by Roland Żerek (lithium.com.pl)</Copyright>
+    <RepositoryType>git</RepositoryType>
+    <RepositoryUrl>https://github.com/rolandzpl/UnityAoop.git</RepositoryUrl>
+    <PackageProjectUrl>https://github.com/rolandzpl/UnityAop</PackageProjectUrl>
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="Lithium.TaskWrapper" Version="1.0.1" />
     <PackageReference Include="Unity" Version="5.11.6" />
+    <PackageReference Include="Unity.Interception" Version="5.11.1" />
   </ItemGroup>
 
 </Project>
